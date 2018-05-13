@@ -32,3 +32,14 @@ function CenturyFromYear (year) {
   // Use `Math.ceil()` to round up
   return Math.ceil(year/100)
 }
+
+// Check Palindrome
+
+// Step 1: split the characters in the string up into separate strings
+// Step 2: reverse the strings
+// Step 3: join the strings back together so that they appear in one strings
+// Step 4: Add the parameter `inputString` before ternary statement to check if they're equal
+function checkPalindrome(inputString) {
+	return inputString ===
+    inputString.split("").reverse().join("")
+}
