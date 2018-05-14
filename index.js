@@ -43,3 +43,6 @@ function checkPalindrome(inputString) {
 	return inputString ===
     inputString.split("").reverse().join("")
 }
+// To test:
+// Running `checkPalindrome('aabaa' .toLowerCase())` will output `true`
+// Running `checkPalindrome('baa' .toLowerCase())` will output `false`
