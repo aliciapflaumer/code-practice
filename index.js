@@ -46,3 +46,17 @@ function checkPalindrome(inputString) {
 // To test:
 // Running `checkPalindrome('aabaa' .toLowerCase())` will output `true`
 // Running `checkPalindrome('baa' .toLowerCase())` will output `false`
+
+// firstNotRepeatingCharacter
+
+// Write a solution that only iterates over the string once and uses O(1) additional memory
+// Given a string s, find and return the first instance of a non-repeating character in it. If there is no such character, return '_'.
+
+function firstNotRepeatingCharacter(s) {
+    for (let i = 0; i < s.length; i++) {
+        if ( s.indexOf(s.charAt(i)) == s.lastIndexOf(s.charAt(i))) {
+            return s.charAt(i)
+        }
+    }
+    return '_'
+}
