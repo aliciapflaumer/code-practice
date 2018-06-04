@@ -60,3 +60,21 @@ function firstNotRepeatingCharacter(s) {
     }
     return '_'
 }
+
+// rotateImage
+
+// rotate a 2D array in javascript
+// You are given an n x n 2D matrix that represents an image. Rotate the image by 90 degrees (clockwise).
+
+function rotateImage(a) {
+  const n = a.length - 1
+  // use nested map
+  const result = a.map((row, i) =>
+    row.map((val, j) => a[n - j][i])
+  )
+  a.length = 0 // hold original array reference
+  a.push(...result) // Spread operator
+  return a
+}
+// Solved with help from:
+// `https://codereview.stackexchange.com/questions/186805/rotate-an-n-%C3%97-n-matrix-90-degrees-clockwise`
