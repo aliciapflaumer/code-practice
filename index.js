@@ -76,5 +76,16 @@ function rotateImage(a) {
   a.push(...result) // Spread operator
   return a
 }
+
+// Another way:
+function rotateImage(a) {
+  let result = []
+  for (let i = 0; i < a[0].length; i++) {
+    let row = a.map(e => e[i]).reverse()
+    result.push(row)
+  }
+  return result
+}
+
 // Solved with help from:
 // `https://codereview.stackexchange.com/questions/186805/rotate-an-n-%C3%97-n-matrix-90-degrees-clockwise`
