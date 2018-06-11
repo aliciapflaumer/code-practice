@@ -31,10 +31,3 @@ function getIntegerComplement(n) {
     complement = complement + ((binary[i] === "1") ? 0 : 1) // invert the number to 1 or 0
     return  parseInt(complement,2)
 }
-
-
-// Pangrams
-function isPangram(strings) {
-
-
-}
