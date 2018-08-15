@@ -1,8 +1,8 @@
-## Code Interview Practice
+# Code Interview Practice
 
 This is a place where I'll keep track of coding practice problems.
 
-# Some things to keep in mind:
+## Some things to keep in mind:
 
 • Tree Traversial
 
