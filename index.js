@@ -1,15 +1,3 @@
-// Fibonacci sequence
-// 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
-function fib(n) {
-  if (n == 1 || n == 2) {
-    result = 1
-  } else {
-    result = fib(n-1) + fib(n-2)
-  }
-  return result
-}
-console.log(fib(3))
-
 // write a function that returns the value of two numbers
 const totalSum = function(param1, param2) {
   return param1 + param2
