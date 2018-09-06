@@ -17,4 +17,4 @@ function climbingStairs(n) {
   return total
 }
 
-console.log(climbingStairs(5))
+console.log(climbingStairs(42))
