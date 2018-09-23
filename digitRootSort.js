@@ -2,14 +2,17 @@ a = [13, 20, 7, 4]
 // digital root 4, 2, 7, 4
 // output [20, 4, 13, 7]
 
+// console.log(a[0].toString().split('').map(Number))
+// output [ 1, 3 ]
+
 function digitRootSort(a) {
-  for (let i = 0; i < a.length; i++) {
-    // if a comes before b
-        // then digitRoot_a is <= digitRoot_b
+  let digits = a.toString().split('')
+  let realDigits = digits.map(Number)
+  let arrayJoined  = realDigits.join('')
+  let sorted = []
 
-    // if else two numbers have same digitRoot
-        // the smaller number should come first
-
+  for (let i = 0; i < arrayJoined.length; i++) {
+      return arrayJoined[0] + arrayJoined[1]
   }
 }
 console.log(digitRootSort(a))
