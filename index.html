@@ -3,10 +3,48 @@
 <head>
   <title>Draw a shape area with canvas</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <style>
+    .container-1{
+      width: 100%;
+      padding: 0;
+      margin: 0 15px;
+    }
+    .container-2{
+      background-color: lightgreen;
+      margin: 5%;
+      width: 100%;
+    }
+    .text-block h1 span{
+        background-color: #000;
+        color: #fff;
+        padding: 10px 5px;
+        line-height: 80px;
+        /* white-space: pre-wrap; */
+        box-shadow: 15px 0 0 #000, -15px 0 0 #000;
+    }
+    .text-block p span{
+      background-color: #000;
+      color: #fff;
+      padding: 10px 5px;
+      line-height: 50px;
+      /* white-space: pre-wrap; */
+      box-shadow: 10px 0 0 #000, -10px 0 0 #000;
+    }
+  </style>
 </head>
 <body onload="draw()">
 <div id="container">
   <canvas id="shape"></canvas>
+</div>
+
+<div class="container-1">
+<div class="container-2">
+  <div class="text-block">
+    <h1><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></h1>
+    <p><span>Phasellus ullamcorper, tellus eu tempus dapibus, tortor velit porttitor lectus, nec vehicula erat lorem sed arcu.</span></p>
+  </div>
+</div>
 </div>
 
 <!-- Bootstrap javascript -->
