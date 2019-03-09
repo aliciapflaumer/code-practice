@@ -10,17 +10,22 @@ var getInitials = function (string) {
 
 // console.log(getInitials('Alicia Pflaumer'));
 
-var s = " ";
+let str = "";
 
-function getMiddle(s) {
-  for (var i = 0; i < s.length; i++) {
-    if (s.length % 2) {
-      return s + " is odd"
+function getMiddle(str) {
+  let length = str.length
+  let middle = Math.floor(length / 2)
+
+    if (length % 2 === 0) {
+      return str[middle - 1] + str[middle] // returns 2 middle characters
     } else {
-      return s + " is even"
+      return str[middle] // returns middle character
     }
-  }
 }
-console.log(getMiddle('table'))
-console.log(getMiddle('source'))
-console.log(getMiddle('A'))
+// console.log(length / 2)
+// console.log(str[middle]) // returns  "r" in "source"
+// console.log(str[middle - 1] + str[middle]) // returns "ur" in "source"
+
+console.log(getMiddle('table')) // odd
+console.log(getMiddle('source')) // even
+console.log(getMiddle('A')) //odd
