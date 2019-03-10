@@ -1,6 +1,7 @@
 var getInitials = function (string) {
     var names = string.split(' ')
         initials = names[0].substring(0, 1).toUpperCase()
+    var period = '.'
 
     if (names.length > 1) {
         initials += names[names.length - 1].substring(0, 1).toUpperCase()
@@ -8,7 +9,9 @@ var getInitials = function (string) {
     return initials;
 };
 
-// console.log(getInitials('Alicia Pflaumer'));
+console.log(getInitials('User Name'));
+
+// Get middle character(s) of a string
 
 let str = "";
 
@@ -16,16 +19,29 @@ function getMiddle(str) {
   let length = str.length
   let middle = Math.floor(length / 2)
 
-    if (length % 2 === 0) {
-      return str[middle - 1] + str[middle] // returns 2 middle characters
-    } else {
+    if (length % 2 === 1) {
       return str[middle] // returns middle character
+    } else {
+      return str[middle - 1] + str[middle] // returns 2 middle characters
     }
 }
 // console.log(length / 2)
 // console.log(str[middle]) // returns  "r" in "source"
 // console.log(str[middle - 1] + str[middle]) // returns "ur" in "source"
 
-console.log(getMiddle('table')) // odd
-console.log(getMiddle('source')) // even
-console.log(getMiddle('A')) //odd
+// console.log(getMiddle('bug')) // odd
+// console.log(getMiddle('Akamai')) // even
+// console.log(getMiddle('source')) // even
+// console.log(getMiddle('A')) //odd
+
+// Compare numbers
+function compare(a,b) {
+  if ( a < b ) {
+    return a + " is less than " + b
+  } else if (a > b) {
+    return a + " is greater than " + b
+  } else {
+    return a + " and " + b + " are equal"
+  }
+}
+// console.log(compare(14, 14))
