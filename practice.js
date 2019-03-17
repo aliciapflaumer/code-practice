@@ -9,10 +9,9 @@ var getInitials = function (string) {
     return initials;
 };
 
-console.log(getInitials('User Name'));
+// console.log(getInitials('User Name'));
 
 // Get middle character(s) of a string
-
 let str = "";
 
 function getMiddle(str) {
@@ -45,3 +44,19 @@ function compare(a,b) {
   }
 }
 // console.log(compare(14, 14))
+
+
+let phoneNumber = ""
+function validPhoneNumber(phoneNumber) {
+  let validCombo = /^\([0-9]{3}\)\s([0-9]{3})([-])([0-9]{4}$)/
+  let match = validCombo.exec(phoneNumber)
+  if (match != null) {
+    return true
+  } else {
+    return false
+  }
+
+  // A one line solution:
+  // return /^\([0-9]{3}\)\s([0-9]{3})([-])([0-9]{4}$)/.test(phoneNumber)
+}
+console.log(validPhoneNumber("(123) 456-7890"))
