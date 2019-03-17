@@ -60,3 +60,11 @@ function validPhoneNumber(phoneNumber) {
   // return /^\([0-9]{3}\)\s([0-9]{3})([-])([0-9]{4}$)/.test(phoneNumber)
 }
 // console.log(validPhoneNumber("(123) 456-7890"))
+
+
+// Create a function that takes a string and returns a new string with the vowels removed.
+function disemvowel(str){
+  return str.replace(/[aeiou]/gi, '')
+}
+// console.log(disemvowel('The quick brown fox jumps over the lazy dog'))
+// output: Th qck brwn fx jmps vr th lzy dg
