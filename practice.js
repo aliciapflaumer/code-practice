@@ -48,7 +48,7 @@ function compare(a,b) {
 
 let phoneNumber = ""
 function validPhoneNumber(phoneNumber) {
-  let validCombo = /^\([0-9]{3}\)\s([0-9]{3})([-])([0-9]{4}$)/
+  let validCombo = /^\([0-9]{3}\)\s([0-9]{3})([-])([0-9]{4})$/
   let match = validCombo.exec(phoneNumber)
   if (match != null) {
     return true
@@ -59,4 +59,4 @@ function validPhoneNumber(phoneNumber) {
   // A one line solution:
   // return /^\([0-9]{3}\)\s([0-9]{3})([-])([0-9]{4}$)/.test(phoneNumber)
 }
-console.log(validPhoneNumber("(123) 456-7890"))
+// console.log(validPhoneNumber("(123) 456-7890"))
