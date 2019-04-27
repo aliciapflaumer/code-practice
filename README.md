@@ -6,9 +6,9 @@ This is a place where I'll keep track of coding practice problems. Not all of my
 
 • Dynamic programming
 
-  • Arrays
+    • Arrays
 
-  • memoization
+    • memoization
 
 • Recursion
 
@@ -16,10 +16,10 @@ This is a place where I'll keep track of coding practice problems. Not all of my
 
 A few Data Structures:
 
-  • Stacks & Queues
+    • Stacks & Queues
 
-  • Linked lists
+    • Linked lists
 
-  • Hash maps
+    • Hash maps
 
-  • Tree Traversial
+    • Tree Traversial
