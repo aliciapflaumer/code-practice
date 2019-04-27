@@ -5,14 +5,21 @@ This is a place where I'll keep track of coding practice problems. Not all of my
 ## Some things to keep in mind:
 
 • Dynamic programming
+
   • Arrays
+
   • memoization
 
 • Recursion
+
 • Sorting
 
 A few Data Structures:
+
   • Stacks & Queues
+
   • Linked lists
+
   • Hash maps
+
   • Tree Traversial
