@@ -4,17 +4,9 @@ This is a place where I'll keep track of coding practice problems. Not all of my
 
 ## Some things to keep in mind:
 
-• Dynamic programming
+• Data Structures:
 
     • Arrays
-
-    • memoization
-
-• Recursion
-
-• Sorting
-
-A few Data Structures:
 
     • Stacks & Queues
 
@@ -23,3 +15,9 @@ A few Data Structures:
     • Hash maps
 
     • Tree Traversial
+
+• Recursion
+
+• Sorting
+
+• memoization
